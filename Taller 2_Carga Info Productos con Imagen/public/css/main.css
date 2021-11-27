@@ -1,0 +1,80 @@
+body {
+    background: #1f4037;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #99f2c8, #1f4037);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #99f2c8, #1f4037); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+html, body {
+    padding-left: 1px;
+    padding-right: 1px;
+    margin: 0;
+    height: 100vh;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #0c2461;
+    height: 100%;
+}
+
+.container img {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.card {
+    border: 1px solid #333;
+    height: 30rem;
+    width: 20rem;
+    position: relative;
+}
+
+.card-footer {
+    position: absolute;
+    bottom: 0px;
+    left: 0;
+    right: 0;
+    text-align: center;
+    padding: 9px;
+    background: #dfe6e9;
+}
+
+.card-footer input {
+    text-align: center;
+}
+
+.container-fluid li a:hover {
+    background: rgb(48, 116, 76);    
+}
+
+.navbar {
+    width: 100%;
+    list-style: none;    
+    margin: auto;    
+}
+
+.new {
+    list-style: none;
+    padding: 10px;
+    background: #092327;
+    width: 99%;
+    margin: auto;    
+}
+
+.new input {   
+    margin: auto;
+}
+
+.atras {
+    padding: 2px;       
+}
+
+.atrasboton {
+    background: transparent;
+    border: none;
+}

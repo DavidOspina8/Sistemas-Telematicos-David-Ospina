@@ -27,7 +27,7 @@ app.get('/tablaprueba', (req, res) => {
 
 //ALMACENA INGRESO DE USUARIOS
 app.post('/', (req, res) => {
-        if ( i < 5 ) {     
+        if ( i < 2 ) {  
         listaNombre[i] = req.body.nombre;
         listaEdad[i] = req.body.edad;
         listaGenero[i] = req.body.genero;
