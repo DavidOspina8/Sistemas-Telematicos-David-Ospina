@@ -1,0 +1,60 @@
+<%- include("template/header") %>
+
+<body>
+    <div class="container">
+        <div class="card col-md-4 mt-5 mx-auto">
+            <div class="card-header">
+                <h3>INGRESE SUS DATOS</h3>
+            </div>
+            <form id="formulario">            
+                <input type="text" placeholder="Nombre" name="nombre" required>
+                <input type="text" placeholder="Género" name="genero" required>
+                <input type="text" placeholder="Nacionalidad" name="nacionalidad" required>
+                <input type="number" placeholder="Teléfono" name="telefono" required>
+                <p></p>
+                <button id="envio">Añadir</button>
+            </form>
+        </div>      
+    </div>
+
+    <center>
+        <br><br>
+
+        <table id="tabla">       
+        <tr>
+            <th>NOMBRE</th>
+            <th>GÉNERO</th>
+            <th>NACIONALIDAD</th>
+            <th>TELÉFONO</th>
+        </tr>  
+    </table>
+
+    </center>
+
+    <script>
+        const form = document.getElementById("formulario");
+        
+        form.addEventListener("submit", function (event){
+            event.preventDefault();
+            let formDatos = new FormData(form);
+            let tablaRef = document.getElementById("tabla");
+            let newTablaRow = tablaRef.insertRow(-1);
+            
+            let newTablaCell = newTablaRow.insertCell(0);
+            newTablaCell.textContent = formDatos.get("nombre");
+
+            newTablaCell = newTablaRow.insertCell(1);
+            newTablaCell.textContent = formDatos.get("genero");
+
+            newTablaCell = newTablaRow.insertCell(2);
+            newTablaCell.textContent = formDatos.get("nacionalidad");
+
+            newTablaCell = newTablaRow.insertCell(3);
+            newTablaCell.textContent = formDatos.get("telefono");
+
+            formulario.reset();
+        })
+    </script>
+     
+</body>
+</html>

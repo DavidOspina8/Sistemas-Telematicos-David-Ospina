@@ -1,7 +1,7 @@
 //Importe los módulos requeridos
 const express = require("express");
 const app = express();
-const puerto = 5000;
+const puerto = process.env.PORT;
 const path = require('path');
 const bodyParser = require('body-parser');
 

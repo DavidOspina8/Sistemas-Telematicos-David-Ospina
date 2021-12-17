@@ -1,0 +1,29 @@
+body {
+    background: #0f0c29;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #24243e, #302b63, #0f0c29);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #24243e, #302b63, #0f0c29); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.card {
+    text-align: center;    
+}
+
+.card-header {
+    color: black;
+}
+
+th{
+    border: 3px solid white;
+    padding: 10px;
+    color: rgb(238, 234, 234);
+    font-weight: bold;
+    text-align: center;
+    background: rgb(80, 92, 255);
+}
+
+td{
+    border: 2px solid white;
+    padding: 5px;
+    color: rgb(238, 234, 234);
+    background: rgb(85, 94, 226);
+}
