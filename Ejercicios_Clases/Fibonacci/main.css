@@ -1,0 +1,10 @@
+.body {
+    font-style: italic;
+}
+
+.title {
+    text-align: center;
+    font-weight: bold;
+    font-size: 30px;
+    color: blue;
+}
